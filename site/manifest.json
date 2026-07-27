@@ -1,0 +1,8 @@
+{
+  "name":"yNicolo Schematics",
+  "short_name":"yNicolo",
+  "start_url":"/site/",
+  "display":"standalone",
+  "background_color":"#ffffff",
+  "theme_color":"#e91e63"
+}

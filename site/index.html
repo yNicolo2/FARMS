@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>yNicolo — Working Farms & Schematics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="../mcpfp - yNicoloo_.png" alt="yNicolo profile" class="brand-avatar" />
+        <span>yNicolo <span class="tag">Schematics</span></span>
+      </div>
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="Menu" type="button">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav class="main-nav">
+        <a href="#farms">Farms</a>
+        <a href="#stash">Stash</a>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+        <a href="#" class="open-membership">Membership</a>
+        <a href="#support">Support</a>
+      </nav>
+      <div class="header-right">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <img src="images/icons/moon.svg" alt="moon icon" class="icon-moon"/>
+          <img src="images/icons/sun.svg" alt="sun icon" class="icon-sun"/>
+        </button>
+        <button class="open-membership btn secondary" type="button">Membership</button>
+        <button id="signin-btn" class="btn signin">Sign In</button>
+        <button id="user-avatar-btn" class="btn avatar-btn" type="button" aria-label="User profile" hidden>
+          <img id="header-avatar" src="https://minotar.net/avatar/Steve/40.png" alt="User avatar" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-neon">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1>Professional Farms for Creators</h1>
+          <p class="lead">Modern, optimized farms with clear schematics and step-by-step guides. Fast downloads and reliable builds.</p>
+          <div class="hero-cta">
+            <a id="get" class="primary-btn" href="#farms">See Farms</a>
+            <a class="ghost-btn" href="#features">Why choose us?</a>
+          </div>
+          <div class="social-logos">
+            <a href="https://www.youtube.com/@yNicolo" target="_blank" rel="noreferrer" aria-label="YouTube"><img src="../youtube-svgrepo-com.svg" alt="YouTube"></a>
+            <a href="mailto:support@ynicolo.com" aria-label="Gmail"><img src="../gmail-svgrepo-com.svg" alt="Gmail"></a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-preview">
+            <img src="images/previews/hero.svg" alt="Farm preview">
+            <div class="glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <div class="feature">
+        <h3>Expert Designs</h3>
+        <p>Built and tested by experienced Redstone engineers.</p>
+      </div>
+      <div class="feature">
+        <h3>Save Time</h3>
+        <p>Layer-by-layer guides and ready-to-download schematics.</p>
+      </div>
+      <div class="feature">
+        <h3>No Guesswork</h3>
+        <p>Clear instructions and compatibility notes for Java/Bedrock.</p>
+      </div>
+    </section>
+
+    <section id="farms" class="container grid-section">
+      <h2>Most Popular Farms This Month</h2>
+      <p class="muted">Every schematic is tested, verified, and ready to download when you join.</p>
+      <div class="grid">
+        <div class="product featured" data-id="charcoal" role="button" aria-label="Open Charcoal Farm details">
+          <img src="images/previews/charcoal-farm.svg" alt="Charcoal Farm preview">
+          <h4>Charcoal Farm — 4M / hour</h4>
+          <p class="small muted">High efficiency, fully automated, Java-tested. Click to preview and download.</p>
+          <div class="product-action">Preview & Download</div>
+        </div>
+        <div class="product" data-id="kelp" role="button" aria-label="Open Kelp Farm details">
+          <img src="images/previews/kelp-farm.svg" alt="Kelp Farm preview">
+          <h4>108K Kelp Farm + Smoker</h4>
+          <p class="small muted">Underwater kelp automation with built-in smoker output.</p>
+          <div class="product-action">Preview & Download</div>
+        </div>
+        <div class="product" data-id="bonemeal" role="button" aria-label="Open Bone Meal Farm details">
+          <img src="images/previews/bonemeal-farm.svg" alt="Bone Meal Farm preview">
+          <h4>4K Bone Meal Farm</h4>
+          <p class="small muted">Reliable bone meal generator with automatic harvest flow.</p>
+          <div class="product-action">Preview & Download</div>
+        </div>
+        <div class="product" data-id="kelp-large" role="button" aria-label="Open 1M Kelp Farm details">
+          <img src="images/previews/1m-kelp-farm.svg" alt="1M Kelp Farm preview">
+          <h4>1M Kelp Farm</h4>
+          <p class="small muted">Massive kelp farm layout for high-volume production.</p>
+          <div class="product-action">Preview & Download</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stash" class="container grid-section">
+      <h2>Popular Stash Builds</h2>
+      <p class="muted">Ready-to-use storage rooms for your items. Compact, organized, and easy to build.</p>
+      <div class="grid">
+        <div class="product" data-id="skeleton-stash" role="button" aria-label="Open Skeleton Stash details">
+          <img src="images/placeholder.svg" alt="Skeleton Stash preview">
+          <h4>Skeleton Stash</h4>
+          <p class="small muted">Compact bone and arrow storage with auto-sorting. Perfect for mob farms.</p>
+          <div class="product-action">Preview & Download</div>
+        </div>
+        <div class="product" data-id="redstone-stash" role="button" aria-label="Open Redstone Stash details">
+          <img src="images/placeholder.svg" alt="Redstone Stash preview">
+          <h4>Redstone Stash</h4>
+          <p class="small muted">Dust, repeaters, comparators, and pistons — all sorted in one compact room.</p>
+          <div class="product-action">Preview & Download</div>
+        </div>
+        <div class="product" data-id="food-stash" role="button" aria-label="Open Food Stash details">
+          <img src="images/placeholder.svg" alt="Food Stash preview">
+          <h4>Food Stash</h4>
+          <p class="small muted">Cooked meats, vegetables, and golden apples neatly organized by category.</p>
+          <div class="product-action">Preview & Download</div>
+        </div>
+        <div class="product featured" data-id="bulk-stash" role="button" aria-label="Open Bulk Stash details">
+          <img src="images/placeholder.svg" alt="Bulk Stash preview">
+          <h4>Bulk Stash — 100+ Items</h4>
+          <p class="small muted">Massive multi-chest storage hall with item filters for over 100 different items.</p>
+          <div class="product-action">Preview & Download</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="container faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+        <button class="acc-item">How quickly can I deploy a farm after download?<span class="acc-icon">+</span></button>
+        <div class="acc-panel">Most schematics include a step-by-step placement guide so you can deploy the farm in minutes once the world is loaded.</div>
+
+        <button class="acc-item">Are your farms optimized for server performance?<span class="acc-icon">+</span></button>
+        <div class="acc-panel">Yes. We design each farm to minimize lag and avoid unnecessary redstone overhead where possible.</div>
+
+        <button class="acc-item">Can I mix these farms with custom builds?<span class="acc-icon">+</span></button>
+        <div class="acc-panel">Absolutely. The layouts are modular so you can integrate them into your base design or server setup.</div>
+
+        <button class="acc-item">Do you offer support for placement issues?<span class="acc-icon">+</span></button>
+        <div class="acc-panel">Yes. Use the support section or Discord link to ask for placement help, and we’ll respond with recommendations.</div>
+
+        <button class="acc-item">What versions of Minecraft are supported?<span class="acc-icon">+</span></button>
+        <div class="acc-panel">Each listing notes compatibility, but most farms are created for the latest Java editions and vanilla survival mechanics.</div>
+
+        <button class="acc-item">Is there a warranty if the schematic does not work?<span class="acc-icon">+</span></button>
+        <div class="acc-panel">We stand behind our downloads. If a farm doesn’t behave as expected, contact us and we’ll help troubleshoot or replace it.</div>
+      </div>
+    </section>
+
+    <section id="support" class="container support-section">
+      <div class="support-card">
+        <div class="support-intro">
+          <h2>Need help with a farm?</h2>
+          <p>Contact our support team for help with downloads, setup, or anything related to your DonutSMP experience.</p>
+        </div>
+        <div class="support-grid">
+          <a class="support-item" href="https://discord.com" target="_blank" rel="noreferrer">
+            <div class="support-icon" aria-hidden="true">
+              <img src="../discord-svgrepo-com.svg" alt="Discord icon">
+            </div>
+            <h3>Discord</h3>
+            <p>Join the community and ask for help quickly.</p>
+          </a>
+          <a class="support-item" href="https://www.youtube.com/@yNicolo" target="_blank" rel="noreferrer">
+            <div class="support-icon" aria-hidden="true">
+              <img src="../youtube-svgrepo-com.svg" alt="YouTube icon">
+            </div>
+            <h3>YouTube</h3>
+            <p>Follow guides, updates, and build walkthroughs.</p>
+          </a>
+          <a class="support-item" href="mailto:support@ynicolo.com">
+            <div class="support-icon" aria-hidden="true">
+              <img src="../gmail-svgrepo-com.svg" alt="Email icon">
+            </div>
+            <h3>Email</h3>
+            <p>Send a direct message for support or questions.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div>© 2026 yNicolo — Schematics</div>
+        <div class="footer-credit">Built by MFL STUDIOS — Site version 8.0</div>
+      </div>
+      <div class="socials">
+        <a href="#">YouTube</a>
+        <a href="#">Gmail</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="product-modal" class="modal" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-body modal-preview-body">
+        <div class="modal-preview-wrapper">
+          <img id="modal-image" src="images/placeholder.svg" alt="Farm preview" class="modal-preview">
+        </div>
+        <div class="modal-copy">
+          <h3 id="modal-title">Title</h3>
+          <div id="modal-tags" class="product-tags"></div>
+          <p id="modal-desc">Description</p>
+          <div class="modal-actions-row">
+            <div class="modal-actions">
+              <a id="download-schematic" class="btn secondary btn-large" href="#" download>Download Schematic</a>
+              <a id="download-world" class="btn primary btn-large" href="#" download>Download World (JAVA ONLY)</a>
+            </div>
+            <div id="download-timer" class="download-timer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="signin-modal" class="modal" role="dialog" aria-hidden="true">
+    <div class="modal-content signin">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-body">
+        <div class="signin-grid no-illustration">
+          <div class="signin-copy">
+              <div class="dev-warning" role="alert">
+                <strong>Warning — In development</strong>
+                <p>Sign-in is under active development and does not currently authenticate. Do not enter real passwords or sensitive information.</p>
+              </div>
+              <h2>Sign in or quick register</h2>
+              <p class="muted">Enter your Minecraft username for a fast demo account. Email and password are optional.</p>
+              <div class="signin-avatar-preview">
+                <img id="mc-avatar-preview" src="https://crafatar.com/avatars/Steve?size=128&default=steve" alt="Minecraft avatar preview" />
+                <p class="muted">Enter your Minecraft username to preview your head.</p>
+              </div>
+
+            <div class="social-signin">
+              <button class="social-btn discord-btn" type="button">
+                <span class="social-btn-icon" aria-hidden="true">
+                  <img src="../discord-svgrepo-com.svg" alt="Discord icon">
+                </span>
+                <span>Discord optional</span>
+              </button>
+            </div>
+
+            <div class="divider"><span>or</span></div>
+
+            <form id="signin-form" class="signin-form">
+              <label class="form-field">
+                <span class="field-label">Minecraft username</span>
+                <input type="text" id="signin-mc-username" placeholder="YourMinecraftName" autocomplete="username" />
+              </label>
+              <label class="form-field">
+                <span class="field-label">Password</span>
+                <input type="password" id="signin-password" placeholder="Enter your password" autocomplete="off" />
+                <p class="signin-warning">DO NOT USE YOUR OFFICIAL MINECRAFT ACCOUNT PASSWORD</p>
+              </label>
+              <div class="modal-actions">
+                <button type="submit" class="btn primary">Sign In / Register</button>
+                <button type="button" class="btn secondary" id="signin-cancel">Cancel</button>
+              </div>
+            </form>
+
+            <div class="signin-footer muted">Login only requires your Minecraft username. Password is optional and not collected.</div>
+
+            <div id="signin-logout-section" class="signin-logout-section" hidden>
+              <p class="muted">You are currently signed in.</p>
+              <button id="logout-btn" class="btn logout-btn" type="button">LOGOUT</button>
+            </div>
+            <div id="signin-password-display" class="signin-logout-section" hidden>
+              <p class="muted">Registration complete! Your account details:</p>
+              <div class="account-details">
+                <div class="detail-row"><span class="label">Username:</span><span id="display-username" class="value">—</span></div>
+                <div class="detail-row"><span class="label">Password:</span><span id="display-password" class="value">—</span></div>
+              </div>
+              <button id="copy-password-btn" class="btn secondary" type="button">Copy Password</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="download-toast" class="toast" role="status" aria-live="polite">
+    <div class="toast-icon">✓</div>
+    <div class="toast-copy">
+      <strong>Download update</strong>
+      <p id="toast-message">A recent farm download just landed.</p>
+    </div>
+    <button class="toast-close" aria-label="Close notification">×</button>
+  </div>
+
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie preferences">
+    <div class="cookie-copy">
+      <strong>We use cookies</strong>
+      <p>This site uses cookies to improve navigation and remember your preferences.</p>
+    </div>
+    <div class="cookie-actions">
+      <button class="btn secondary cookie-btn" data-choice="reject">Preferences / Reject</button>
+      <button class="btn primary cookie-btn" data-choice="accept">Accept All</button>
+    </div>
+  </div>
+
+  <div id="image-lightbox" class="image-lightbox" role="dialog" aria-hidden="true">
+    <button class="modal-close lightbox-close" aria-label="Close preview">×</button>
+    <img id="lightbox-image" src="images/placeholder.svg" alt="Farm preview">
+  </div>
+
+  <div id="membership-modal" class="modal" role="dialog" aria-hidden="true">
+    <div class="modal-content membership">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-body">
+        <h2>Membership Access</h2>
+        <p class="muted">Choose one of the membership plans below. Plans last for 30, 60 or 90 days and unlock instant downloads.</p>
+        <div class="membership-card">
+          <div class="membership-grid">
+            <div class="membership-plan">
+              <h3>30 Days</h3>
+              <p class="plan-price">$1</p>
+              <p class="muted">30 days of premium access with instant downloads.</p>
+              <button type="button" class="btn secondary membership-plan-btn" data-plan="30">Request 30-day plan</button>
+            </div>
+            <div class="membership-plan">
+              <h3>60 Days</h3>
+              <p class="plan-price">$3</p>
+              <p class="muted">60 days of premium access with priority support.</p>
+              <button type="button" class="btn secondary membership-plan-btn" data-plan="60">Request 60-day plan</button>
+            </div>
+            <div class="membership-plan">
+              <h3>90 Days</h3>
+              <p class="plan-price">$5</p>
+              <p class="muted">90 days of premium access with unlimited downloads.</p>
+              <button type="button" class="btn secondary membership-plan-btn" data-plan="90">Request 90-day plan</button>
+            </div>
+          </div>
+          <p>After payment, open a Discord ticket and staff will grant your access within <strong>2 hours</strong>.</p>
+          <div class="membership-actions">
+            <a class="btn primary btn-large" href="https://discord.com" target="_blank" rel="noreferrer">Open Discord Ticket</a>
+            <button id="activate-membership" class="btn secondary btn-large">Request access after payment</button>
+          </div>
+          <div id="membership-status" class="membership-status"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script defer src="js/membership-api.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>
